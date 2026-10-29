@@ -12,12 +12,14 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 50pt;
     margin-left: 30pt;
-    padding: 14pt;
+    margin-top: 30pt;
 }
 
 h2 {
     font-size: 18pt;
-    margin: 12pt;
+    padding-left: 0pt;
+    padding-bottom: 10pt;
+    margin:0;
 }
 
 .buy {
@@ -29,7 +31,7 @@ h2 {
 
     border-radius: 6pt;
     margin: 30pt;
-    max-width: 300pt;
+    max-width: 250pt;
     position: relative;
 }
 
@@ -42,7 +44,7 @@ h2 {
     margin: 30pt;
     border-radius: 6pt;
 
-    max-width: 300pt;
+    max-width: 250pt;
     position: relative;
 }
 
@@ -55,7 +57,7 @@ h2 {
     margin: 30pt;
     border-radius: 6pt;
 
-    max-width: 300pt;
+    max-width: 250pt;
     position: relative;
 }
 
@@ -67,7 +69,7 @@ ul {
 li {
     list-style: none;
     position: relative;
-    padding-left: 12pt;
+    padding-left: 0pt;
 }
 
 a {

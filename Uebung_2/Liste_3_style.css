@@ -7,14 +7,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 42rem;
+    height: 15rem;
 }
 
 div {
     margin-left: 12rem;
     text-align: left;
-    transform: translateY(42rem);
-    padding-top: 8rem;
+    transform: translateY(5rem);
+    padding-top: 5rem;
+}
+
+div[class="Africa"] {
+    padding-top: 20rem;
 }
 
 h1 {
@@ -29,15 +33,15 @@ ul {
     font-family: "Poetsen One", sans-serif;
     font-size: 5rem;
     color: rgb(0, 183, 255);
-    line-height: 8rem;
+    line-height: 5rem;
     padding-left: 7rem;
-
+    margin: 0;
 }
 
 li {
     list-style-type: decimal-leading-zero;
-    text-indent: 2rem;
-    margin: 0;
+    text-indent: 1rem;
+    margin: 0 0 2.5rem 0;
     padding: 0;
 }
 
