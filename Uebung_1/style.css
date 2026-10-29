@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+
+body {
+    font-family: "Lexend", sans-serif;
+    background-color: beige;
+    cursor: url("ribbon.png") 8 8, auto;
+}
+
+h1 {
+    font-size: 70pt;
+    color: #ff8da1;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 50pt;
+    margin-left: 30pt;
+    padding: 14pt;
+}
+
+h2 {
+    font-size: 18pt;
+    margin: 12pt;
+}
+
+.buy {
+    font-size: 16pt;
+    background-color: #d8bfd8;
+    border: 4pt solid #8A2BE2;
+
+    padding: 14pt;
+
+    border-radius: 6pt;
+    margin: 30pt;
+    max-width: 300pt;
+    position: relative;
+}
+
+.school {
+    font-size: 16pt;
+    background-color: #fc9aa9;
+    border: 4pt solid #3c0508;
+
+    padding: 14pt;
+    margin: 30pt;
+    border-radius: 6pt;
+
+    max-width: 300pt;
+    position: relative;
+}
+
+.hobbies {
+    font-size: 16pt;
+    background-color: #ffc5d3;
+    border: 4pt solid #ff8da1;
+
+    padding: 14pt;
+    margin: 30pt;
+    border-radius: 6pt;
+
+    max-width: 300pt;
+    position: relative;
+}
+
+ul {
+    padding: 0pt;
+    margin: 0pt;
+}
+
+li {
+    list-style: none;
+    position: relative;
+    padding-left: 12pt;
+}
+
+a {
+    font-size: 8pt;
+    padding: 30pt;
+    color:brown
+}
+.bild {
+    position: absolute;
+    bottom: -20pt;
+    right: -20pt;
+}

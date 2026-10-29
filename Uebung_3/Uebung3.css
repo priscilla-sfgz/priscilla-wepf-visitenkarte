@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --hell: #ffcfea;
+    --dunkel: rgb(82, 0, 34);
+
+    --schrift: "Raleway", sans-serif;
+    --time: 0.4s;
+}
+
+body {
+    margin: 0;
+    border: 1rem solid var(--hell);
+}
+
+
+main {
+    padding: 3.2rem 4rem 4rem 4rem;
+    background: var(--dunkel);
+}
+
+.head h1 {
+    font-size: 6rem;
+    color: var(--hell);
+    font-family: "Uncial Antiqua", system-ui;
+    line-height: 7rem;
+    letter-spacing: 0.3rem;
+    margin: 0 0 1rem 0;
+}
+
+.head p {
+    font-size: 1.5rem;
+    color: var(--hell);
+    font-family: var(--schrift);
+    line-height: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+/* Einstellungen der ganzen Galerie */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2rem 4fr 4rem 4fr;
+    column-gap: 1.5rem;
+}
+
+/* Positionen der Bilder innerhalb der Zellen und Polaroid-Aufbau */
+figure {
+    background-color: var(--hell);
+    padding: 1rem 1rem 1.5rem 1rem;
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(124, 124, 124, 0.651);
+}
+
+/* Einstellungen Bilder */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Erste Zeile Text von Figure */
+figure figcaption::first-line {
+    font-weight: 700;
+}
+
+/* Rest Text von Figure */
+figure figcaption {
+    font-size: 1rem;
+    color: var(--dunkel);
+    font-family: var(--schrift);
+    padding-top: 1rem;
+    line-height: 1.5rem;
+}
+
+
+/* Positionen der Bilder innerhalb des Gitters */
+.pic1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.pic2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.pic3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.pic4 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.pic5 {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+.pic6 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.pic7 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.pic8 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+.pic9 {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
+
+.pic10 {
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+}
+
+
+/* Positionen der Bilder innerhalb des Gitters bei Hover + Trasition*/
+.pic1:hover,
+.pic2:hover,
+.pic3:hover,
+.pic4:hover,
+.pic5:hover,
+.pic6:hover,
+.pic7:hover,
+.pic8:hover,
+.pic9:hover,
+.pic10:hover {
+    transform: translateY(-2rem);
+    transition: transform var(--time) ease-in-out;
+}
+
+/* Transition auch bei Maus weg */
+.pic1,
+.pic2,
+.pic3,
+.pic4,
+.pic5,
+.pic6,
+.pic7,
+.pic8,
+.pic9,
+.pic10 {
+    transition: transform var(--time) ease-in-out;
+}

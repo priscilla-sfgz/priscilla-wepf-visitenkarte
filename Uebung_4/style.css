@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+}
+
+section {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    line-height: 30vh;
+    font-family: "Commissioner", sans-serif;
+    font-weight: 800;
+    font-size: 20vw;
+
+    display: flex;
+    column-gap: 1vw;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+div.hoverhere {
+    background-color: rgb(234, 6, 131);
+    height: 10rem;
+    width: 30rem;
+    border-radius: 2rem;
+
+    padding-bottom: 0.8rem;
+
+    font-family: "Commissioner", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    color: white;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.button {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.c,
+.i,
+.a,
+.o {
+    transition: 1s;
+}
+
+body:has(.hoverhere:hover) .c {
+    transform: translate(0rem, 7rem);
+    transition-delay: 0.2s;
+}
+
+body:has(.hoverhere:hover) .i {
+    transform: translate(0rem, 7rem);
+    transition-delay: 0.5s;
+}
+
+body:has(.hoverhere:hover) .a {
+    transform: translate(0rem, 7rem);
+    transition-delay: 1s;
+}
+
+body:has(.hoverhere:hover) .o {
+    transform: translate(0rem, 500rem);
+    transition-delay: 2s;
+    transform-origin: left bottom;
+}
