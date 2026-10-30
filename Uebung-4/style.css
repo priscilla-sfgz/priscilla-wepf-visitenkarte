@@ -34,21 +34,21 @@ h1 {
     transition: 2.5s ease-in-out;
 }
 
-h1:hover .c{
-    color: rgb(236, 0, 0);
+h1:hover .c {
+    color: rgb(0, 236, 8);
 }
 
-h1:hover .i{
-    color: rgb(236, 0, 0);
+h1:hover .i {
+    color: rgb(0, 236, 8);
 
 }
 
-h1:hover .a{
+h1:hover .a {
     color: rgb(255, 255, 255);
 }
 
-h1:hover .o{
-    color: rgb(0, 136, 18);
+h1:hover .o {
+    color: rgb(236, 0, 0);
 }
 
 h1:hover {
