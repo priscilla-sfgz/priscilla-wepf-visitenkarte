@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+:root {
+    --font-techno: "quantico";
+    --pink: rgb(255, 79, 163);
+    --black: rgb(0, 0, 0);
+    --yellow: rgb(199, 240, 0);
+    --violet: rgb(123, 63, 242);
+    --white: rgb(253, 249, 250);
+}
+
+body {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10rem 0 0 0;
+    line-height: 10rem;
+
+    font-family: var(--font-techno);
+}
+
+.one,
+.two,
+.three {
+    color: var(--white);
+    font-size: 3.5rem;
+    font-family: var(--font-techno);
+}
+
+
+.links {
+    position: fixed;
+    bottom: 1.5rem;
+    line-height: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.links a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: open sans, sans-serif;
+
+    color: rgb(200, 200, 200);
+}
+
+.links a.active {
+    color: rgb(30, 190, 54);
+    font-weight: bold;
+}
+
+/* Animation typing*/
+@keyframes typing {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* Animation too much*/
+@keyframes toomuch {
+
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    40% {
+        color: var(--yellow);
+        transform: translateX(-30px) rotate(-6deg);
+        font-family: "Kablammo", system-ui;
+    }
+
+    80% {
+        color: var(--yellow);
+        transform: translateX(15px) rotate(6deg);
+        font-family: "Kablammo", system-ui;
+    }
+
+
+}
+
+
+@keyframes less {
+
+    0% {
+        transform: scale(1);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--violet);
+    }
+
+    50% {
+        transform: scale(0.5);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--violet);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animation typing color*/
+@keyframes typingpink {
+    from {
+        clip-path: inset(0 100% 0 0);
+        font-family: "Racing Sans One", sans-serif;
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+        color: var(--pink);
+        font-family: "Racing Sans One", sans-serif;
+    }
+}
+
+@keyframes below {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(3rem)scale(1, 0.2);
+        opacity: 1;
+        color: var(--violet);
+        font-family: "Oswald", sans-serif;
+        width: 19rem;
+    }
+
+    100% {}
+}
+
+@keyframes bigdeal {
+    0% {
+        transform: rotate(0);
+    }
+
+        10% {
+            color: var(--yellow);
+        }
+
+        100% {
+            transform: rotate(360deg);
+            text-transform: uppercase;
+            color: var(--yellow);
+        }
+    }
+
+
+    .one {
+        animation: typing 3s both;
+    }
+
+    .one span:nth-child(2) {
+        display: inline-block;
+        animation: toomuch 1s 1s both;
+    }
+
+    .one span:nth-child(4) {
+        display: inline-block;
+        animation: less 1s 3s forwards;
+    }
+
+
+    .two span:nth-child(1) {
+        display: inline-block;
+        animation: typing 1.3s 3.3s both;
+    }
+
+    .two span:nth-child(2) {
+        display: inline-block;
+        animation: typingpink 0.5s 4.8s backwards;
+    }
+
+    .two span:nth-child(3) {
+        display: inline-block;
+        animation: below 1s 5.3s backwards;
+    }
+
+    .two span:nth-child(4) {
+        display: inline-block;
+        animation: typing 0.6s 6.3s both;
+    }
+
+    .three span:nth-child(2) {
+        display: inline-block;
+        animation: bigdeal 1s 7.6s backwards;
+    }
+
+    .three {
+        animation: typing 3s 7.4s both;
+    }

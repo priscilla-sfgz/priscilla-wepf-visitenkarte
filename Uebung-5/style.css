@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 
 :root {
     --font-hard: "Abril Fatface";
@@ -13,15 +15,38 @@
 }
 
 body {
-    margin: 2rem 3rem 3rem 3rem;
+
     background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 4rem 0 0 0;
+    margin: 5rem 0 0 0;
     line-height: 5rem;
 }
+
+.links {
+    position: fixed;
+    bottom: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.links a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: open sans, sans-serif;
+
+    color: rgb(100, 100, 100);
+}
+
+.links a.active {
+    color: rgb(30, 190, 54);
+    font-weight: bold;
+}
+
 
 /* Aussehen Im the man */
 .one,
