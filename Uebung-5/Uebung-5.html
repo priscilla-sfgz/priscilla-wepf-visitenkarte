@@ -10,7 +10,7 @@
 
 <body>
 
-    <section>
+    <section class="AnimationPaused">
         <div class="one">i'm the man</div>
         <div class="two">
             <span style="--i: 0">in</span>
@@ -36,11 +36,17 @@
         <div class="nine">i'm the man</div>
     </section>
 
-        <div class="links">
-        <a class="active" href="Uebung-5.html">Animation 1</a>
-        <a  href="Animation-2/Animation-2.html">Animation 2</a>
-        <a href="Animation-3/Animation-3.html">Animation 3</a>
-    </div>
+    <!-- <div class="links"> -->
+    <!-- <a class="active" href="Uebung-5.html">Animation 1</a> -->
+    <!-- <a  href="Animation-2/Animation-2.html">Animation 2</a> -->
+    <!-- <a href="Animation-3/Animation-3.html">Animation 3</a> -->
+    <!-- </div> -->
+    <button id="playButton" onclick="playAnimation()">play!</button>
+
+    <div id="spotify"></div>
+
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

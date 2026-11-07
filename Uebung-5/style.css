@@ -47,6 +47,24 @@ body {
     font-weight: bold;
 }
 
+button {
+    position: fixed;
+    bottom: 2rem;
+
+    font-family: open sans, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+
+    background-color: var(--white);
+    box-shadow: 0.2rem 0.2rem 8px #888888;
+    border: none;
+    border-radius: 2rem;
+    width: 6rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Aussehen Im the man */
 .one,
@@ -199,6 +217,36 @@ body {
     }
 }
 
+@keyframes vibrate {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+button {
+    animation: vibrate 0.3s linear infinite;
+}
 
 /* Angewendete Animationen */
 .one {
@@ -245,4 +293,9 @@ body {
 
 .nine {
     animation: animation1 0.8s 10.8s both;
+}
+
+.AnimationPaused,
+.AnimationPaused * {
+    animation-play-state: paused !important;
 }
